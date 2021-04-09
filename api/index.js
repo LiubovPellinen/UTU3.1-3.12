@@ -4,6 +4,7 @@ const bodyParser = require('body-parser')
 app.use(express.json());
 const cors = require('cors')
 app.use(cors())
+app.use(express.static('build'))
 let reminders= [
     {
       "name": "Buy some eggs",
