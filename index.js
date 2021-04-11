@@ -5,7 +5,7 @@ app.use(express.json());
 const cors = require('cors')
 app.use(cors())
 app.use(express.static('build'))
-const Reminder = require('../models/reminder')//  Mongoose-specific code in a separate module.()
+const Reminder = require('./models/reminder')//  Mongoose-specific code in a separate module.()
 
 const formatReminder = (reminder) => {
   return {
